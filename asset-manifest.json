@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Link-State-Routing-Protocol/static/css/main.0ab8c3fb.css",
+    "main.js": "/Link-State-Routing-Protocol/static/js/main.bfb8f47a.js",
+    "static/js/453.7ede5a6e.chunk.js": "/Link-State-Routing-Protocol/static/js/453.7ede5a6e.chunk.js",
+    "index.html": "/Link-State-Routing-Protocol/index.html",
+    "main.0ab8c3fb.css.map": "/Link-State-Routing-Protocol/static/css/main.0ab8c3fb.css.map",
+    "main.bfb8f47a.js.map": "/Link-State-Routing-Protocol/static/js/main.bfb8f47a.js.map",
+    "453.7ede5a6e.chunk.js.map": "/Link-State-Routing-Protocol/static/js/453.7ede5a6e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ab8c3fb.css",
+    "static/js/main.bfb8f47a.js"
+  ]
+}

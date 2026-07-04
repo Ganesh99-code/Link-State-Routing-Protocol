@@ -1,0 +1,112 @@
+.tutorial-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+.tutorial-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Add a special z-index for the fullscreen tutorial overlay */
+.tutorial-overlay.fullscreen {
+  z-index: 10000;
+}
+
+.tutorial-highlight {
+  position: absolute;
+  z-index: 9998;
+  border-radius: 4px;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.7);
+  border: 2px solid var(--accent-color, #4cc9f0);
+  pointer-events: none;
+  background-color: transparent; /* Ensure the highlighted area is transparent */
+}
+
+/* Add a special z-index for the fullscreen tutorial highlight */
+.tutorial-highlight.fullscreen {
+  z-index: 10001;
+}
+
+.tutorial-tooltip {
+  position: absolute;
+  z-index: 9999;
+  background-color: var(--secondary-bg, #112240);
+  color: var(--primary-text, #e6f1ff);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  pointer-events: auto;
+  border: 1px solid var(--panel-border, #1f3a60);
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.tutorial-tooltip p {
+  margin: 0 0 16px 0;
+  line-height: 1.5;
+}
+
+.tooltip-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.tooltip-prev-button,
+.tooltip-next-button,
+.tooltip-skip-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.tooltip-prev-button {
+  background-color: var(--accent-bg, #1f3a60);
+  color: var(--primary-text, #e6f1ff);
+}
+
+.tooltip-prev-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tooltip-next-button {
+  background-color: var(--accent-color, #4cc9f0);
+  color: white;
+}
+
+.tooltip-next-button:hover {
+  background-color: var(--accent-color-hover, #64d1f4);
+  transform: translateY(-2px);
+}
+
+.tooltip-skip-button {
+  background-color: transparent;
+  color: var(--secondary-text, #a8b2d1);
+  text-decoration: underline;
+}
+
+.tooltip-prev-button:hover:not(:disabled) {
+  filter: brightness(0.95);
+  transform: translateY(-2px);
+}
+
+.tooltip-skip-button:hover {
+  color: var(--primary-text, #e6f1ff);
+}

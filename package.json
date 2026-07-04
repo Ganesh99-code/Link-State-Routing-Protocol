@@ -2,7 +2,7 @@
   "name": "link-state-routing-simulator",
   "version": "0.1.1",
   "private": true,
-  "homepage": "https://hemanth4646k.github.io/link-state-routing-simulator/",
+  "homepage": "https://Ganesh99-code.github.io/Link-State-Routing-Protocol/",
   "dependencies": {
     "@react-three/drei": "^10.0.5",
     "@react-three/fiber": "^9.1.0",
